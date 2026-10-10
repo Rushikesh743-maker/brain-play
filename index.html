@@ -1,80 +1,138 @@
-```css
-/* Advertisement containers */
-.ad-container {
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px auto;
-  padding: 10px;
-  min-width: 0;
-  overflow: hidden;
-  border: 1px dashed #b8c3d1;
-  border-radius: 8px;
-  background: #f8fafc;
-  text-align: center;
-}
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.ad-label {
-  position: absolute;
-  top: 4px;
-  left: 8px;
-  color: #64748b;
-  font-size: 10px;
-  z-index: 1;
-  pointer-events: none;
-}
+  <title>BRAINPLAY - Brain Training Games</title>
+  <meta name="description"
+        content="Play fun brain-training games with BRAINPLAY. Improve your memory, reaction time, focus, and thinking skills.">
 
-/* Top and bottom banner */
-.ad-top,
-.ad-bottom {
-  width: min(100% - 30px, 970px);
-  min-height: 100px;
-}
+  <link rel="stylesheet" href="style.css">
+</head>
 
-/* Ad below the game cards */
-.ad-middle {
-  width: min(100% - 30px, 728px);
-  min-height: 90px;
-}
+<body>
 
-/* Main game layout */
-.game-layout {
-  display: grid;
-  grid-template-columns: minmax(120px, 160px) minmax(0, 1fr)
-                         minmax(120px, 160px);
-  gap: 20px;
-  align-items: start;
-  width: min(100% - 30px, 1200px);
-  margin: 20px auto;
-}
+  <!-- Website Header -->
+  <header>
+    <h1>🧠 BRAINPLAY 🧠</h1>
+    <p>Challenge Your Mind. Beat Your Best.</p>
+  </header>
 
-.game-layout #game-area {
-  min-width: 0;
-  width: 100%;
-}
+  <main>
 
-.ad-sidebar {
-  width: 100%;
-  min-height: 300px;
-  margin: 0;
-}
+    <!-- AD SLOT 1: TOP BANNER -->
+    <section class="ad-container ad-top" aria-label="Advertisement">
+      <span class="ad-label">Advertisement</span>
 
-/* Mobile layout */
-@media (max-width: 768px) {
-  .game-layout {
-    grid-template-columns: minmax(0, 1fr);
-  }
+      <!-- PASTE ADSTERRA TOP BANNER CODE BELOW -->
 
-  .ad-sidebar {
-    min-height: 100px;
-    max-width: 320px;
-  }
 
-  .ad-top,
-  .ad-bottom {
-    min-height: 90px;
-  }
-}
+      <!-- PASTE ADSTERRA TOP BANNER CODE ABOVE -->
+    </section>
+
+
+    <!-- Game Score Cards -->
+    <section class="score-grid" aria-label="Brain games">
+
+      <div class="score-card" onclick="showGame('reaction')">
+        <div class="game-name">⚡ Reaction</div>
+        <div class="game-score" id="best-reaction">—</div>
+      </div>
+
+      <div class="score-card" onclick="showGame('memory')">
+        <div class="game-name">🃏 Memory</div>
+        <div class="game-score" id="best-memory">—</div>
+      </div>
+
+      <div class="score-card" onclick="showGame('pattern')">
+        <div class="game-name">🔴 Pattern</div>
+        <div class="game-score" id="best-pattern">—</div>
+      </div>
+
+      <div class="score-card" onclick="showGame('countdown')">
+        <div class="game-name">⏳ Countdown</div>
+        <div class="game-score" id="best-countdown">—</div>
+      </div>
+
+      <div class="score-card" onclick="showGame('cupball')">
+        <div class="game-name">🎯 Cup &amp; Ball</div>
+        <div class="game-score" id="best-cupball">—</div>
+      </div>
+
+      <div class="score-card" onclick="showGame('aim')">
+        <div class="game-name">🟢 Aim Trainer</div>
+        <div class="game-score" id="best-aim">—</div>
+      </div>
+
+    </section>
+
+
+    <!-- AD SLOT 2: BELOW GAME CARDS -->
+    <section class="ad-container ad-middle" aria-label="Advertisement">
+      <span class="ad-label">Advertisement</span>
+
+      <!-- PASTE ADSTERRA BANNER CODE BELOW -->
+
+
+      <!-- PASTE ADSTERRA BANNER CODE ABOVE -->
+    </section>
+
+
+    <!-- Game Area and Sidebar Ads -->
+    <section class="game-layout">
+
+      <!-- AD SLOT 3: LEFT SIDEBAR -->
+      <aside class="ad-container ad-sidebar" aria-label="Advertisement">
+        <span class="ad-label">Advertisement</span>
+
+        <!-- PASTE ADSTERRA LEFT SIDEBAR CODE BELOW -->
+
+
+        <!-- PASTE ADSTERRA LEFT SIDEBAR CODE ABOVE -->
+      </aside>
+
+
+      <!-- Existing Game Area -->
+      <div id="game-area"></div>
+
+
+      <!-- AD SLOT 4: RIGHT SIDEBAR -->
+      <aside class="ad-container ad-sidebar" aria-label="Advertisement">
+        <span class="ad-label">Advertisement</span>
+
+        <!-- PASTE ADSTERRA RIGHT SIDEBAR CODE BELOW -->
+
+
+        <!-- PASTE ADSTERRA RIGHT SIDEBAR CODE ABOVE -->
+      </aside>
+
+    </section>
+
+
+    <!-- AD SLOT 5: BOTTOM BANNER -->
+    <section class="ad-container ad-bottom" aria-label="Advertisement">
+      <span class="ad-label">Advertisement</span>
+
+      <!-- PASTE ADSTERRA BOTTOM BANNER CODE BELOW -->
+
+
+      <!-- PASTE ADSTERRA BOTTOM BANNER CODE ABOVE -->
+    </section>
+
+  </main>
+
+
+  <!-- Website Footer -->
+  <footer>
+    <p>© 2026 BRAINPLAY. Play smart. Think faster.</p>
+  </footer>
+
+
+  <!-- Existing Game Logic -->
+  <script src="script.js"></script>
+
+</body>
+</html>
 ```
